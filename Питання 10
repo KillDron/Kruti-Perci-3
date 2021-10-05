@@ -1,0 +1,9 @@
+m = -1000000
+D = ('a',25),('b',37),('c',45),('d',37)
+for i,j in D:
+    if j > m:
+        L = [i]
+        m = j
+    elif j == m:
+        L.append(i)
+print(L)
