@@ -1,0 +1,20 @@
+def F(n):
+    if n < 1:
+        return " "
+    elif n == 1:
+        L = [1]
+    elif n > 1:
+        L = [1,1]
+    n -= 2
+    x, y = 1,1
+    while n > 0:
+        if n % 2 == 0:
+            x = x + y
+            L.append(x)
+            n -= 1
+        if n % 2 == 1:
+            y = y + x
+            L.append(y)
+            n -= 1
+    return print(L)
+F(int(input("Введіть кількість чисел Фібоначі:")))
