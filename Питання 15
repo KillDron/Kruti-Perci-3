@@ -1,0 +1,7 @@
+def reverts(d):
+    dicr = {}
+    for i, j in d.items():
+        dicr[j] = i
+    return print(dicr)
+a = {"Іра": "Укр Мова", "Богдан": "Математика", "Сергій": "Музика"}
+reverts(a)
